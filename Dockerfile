@@ -8,9 +8,9 @@ FROM rtvu/docker-ubuntu
 # Environment Variables #
 #########################
 
-ENV ASDF_VERSION=v0.13.1
-ENV ERLANG_VERSION=26.1.2
-ENV ELIXIR_VERSION=1.15.7-otp-26
+ENV ASDF_VERSION=v0.14.0
+ENV ERLANG_VERSION=27.0
+ENV ELIXIR_VERSION=1.17.1-otp-27
 
 ################
 # Install asdf #
@@ -44,8 +44,8 @@ RUN \
     libncurses5-dev \
     libpng-dev \
     libssh-dev \
-    libwxgtk-webview3.0-gtk3-dev \
-    libwxgtk3.0-gtk3-dev \
+    libwxgtk-webview3.2-dev \
+    libwxgtk3.2-dev \
     libxml2-utils \
     m4 \
     openjdk-11-jdk \

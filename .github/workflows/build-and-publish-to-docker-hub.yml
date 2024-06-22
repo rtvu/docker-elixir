@@ -1,7 +1,7 @@
 name: Build and Publish to Docker Hub
 
 env:
-  VERSION: 22.04
+  VERSION: 24.04
 
 on:
   workflow_call:
