@@ -1,7 +1,7 @@
 name: Build and Publish to Docker Hub
 
 env:
-  VERSION: 24.04
+  VERSION: 1.17
 
 on:
   workflow_call:
@@ -31,9 +31,7 @@ jobs:
           flavor: |
             latest=true
           tags: |
-            type=semver,pattern={{version}},prefix=${{ env.VERSION }}
-            type=semver,pattern={{major}}.{{minor}},prefix=${{ env.VERSION }}
-            type=raw,value=main,enable={{is_default_branch}}
+            type=raw,value=${{ env.VERSION }}
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v3
