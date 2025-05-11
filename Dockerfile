@@ -8,9 +8,9 @@ FROM rtvu/ubuntu:24.04
 # Environment Variables #
 #########################
 
-ENV ASDF_VERSION=v0.14.0
-ENV ERLANG_VERSION=27.0.1
-ENV ELIXIR_VERSION=1.17.2-otp-27
+ENV ASDF_VERSION=v0.15.0
+ENV ERLANG_VERSION=27.3.4
+ENV ELIXIR_VERSION=1.18.3-otp-27
 
 ################
 # Install asdf #
